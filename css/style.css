@@ -1,0 +1,211 @@
+/* CSS Document */
+
+
+html{
+ overflow: scroll;
+ font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;	
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background: #333;
+    color: #000;
+}
+
+
+img, embed, object, video{
+  max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+	color: black;
+}
+
+li{
+    list-style-type: none;
+}
+
+ol li{
+ list-style-type:decimal;   
+}
+
+footer{
+    background-color: rgba(3,155,20,1.00);
+    height: 60px;
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+}
+
+td{
+
+    padding: 2px;
+}
+
+.hdrGroup{	
+	display: flex;
+	flex-wrap: nowrap;
+    height: 130px;
+	min-height: 120px;
+    width: 100%;	
+	min-width: 270px;
+    background-color: rgba(36,105,244,1.00);
+	margin: auto;
+}
+
+.hdrLogoGrp{
+    width: 50%; 
+	height: auto;
+	margin-left: 20px;
+	padding: 15px 0;
+}
+
+
+.mainSection{
+    height: auto;
+    width: 80%;
+    background-color: lightgreen;
+    margin: 20px auto;
+    border: 3px solid orange;
+    padding: 10px 0;
+}
+
+.topMenuGrp{
+	background-color: rgba(4,200,14,1.00);
+    width: 100%;	
+	min-width: 270px;
+	height: 70px;
+	margin: auto;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.topMenu{
+	color: black;
+	padding-right: 10%;	
+	margin: auto;
+}
+
+
+.winScoreGrp{
+    margin: auto;
+    padding-right: 5px;
+}
+
+.winScoreGrp strong{
+    margin-right: 5px;
+}
+
+.userBtn{
+    width: 120px;
+    margin: 5px;    
+    box-shadow: 10px 5px 5px black;
+    border: 1px solid black;
+}
+
+.userChoiceGrp{
+    width: 100%;   
+	flex-wrap: wrap;
+    margin: auto;
+    padding-left: 50px;
+}
+
+.mainSection p{
+    text-align: center;
+    font-size: 28px;
+    font-family: Lucida "Lucida Grande";
+}
+
+
+.playerScores{
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.resultsWindow{
+    border: 3px solid black;
+    background-color: white;
+    width:80%;
+    height: 100px;
+    margin: 0 auto 30px auto;
+}
+
+
+.userBtn:hover{
+    background-color: blue;
+}
+
+#shellyGif{
+    height: 115px;
+    margin: 5px;
+    
+}
+
+#winScoreInp{
+    width: 60px;
+    margin: auto;
+    padding-left: 10px;
+}
+
+#topLogo{
+    height: 100%;
+    width: 240px;    
+}
+
+#topNav.topMenu button{
+	border: 2px solid black;
+	margin: 10px;
+	width: 120px;
+}
+
+
+@media screen and (max-width: 400px) {
+  #rockBtn{
+      order: 1;
+      margin-left: 75px;
+    }
+  #paperBtn{
+      order: 2;
+      margin-left: 75px;
+    }
+  #scissorsBtn{
+      order: 3;
+      margin-left: 75px;
+    }
+  #spockLizardBtn{
+      order: 4;
+      margin-left: 75px;
+    }
+  #fistBumpBtn{
+      order: 5;
+      margin-left: 75px;
+    }
+    .mainSection p{font-size: 20px;}  
+    .userChoiceGrp{padding-left: 0;}
+    .mainSection{height: 520px;}
+    #topLogo{
+        margin-left: 20px;
+    }
+    .hdrLogoGrp{
+        width:100%;
+    }   
+    #gifWindow{
+        visibility: hidden;
+        width: 0px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

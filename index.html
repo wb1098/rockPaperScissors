@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang = "en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<link href="css/style.css" type="text/css" rel="stylesheet">
+<title>Rock, Paper, Scissors</title>
+</head>
+
+<body>
+<header class="hdrGroup">
+  <div class="hdrLogoGrp">
+   <img id="topLogo" src="img/rps-small-logo.png" alt="RPS logo"> </div>
+  <div id="gifWindow"> 
+    <img id="shellyGif" src="img/tenor.gif" alt="rock paper scissors spockLizard and fist bump"> 
+  </div>
+</header>
+<section class="topMenuGrp">
+  <nav navbar class="topMenu" id="topNav">
+    <button id="resetBtn" class="btn btn-danger">Reset</button>
+  </nav>
+  <div class="winScoreGrp"> <strong>Winning Score:</strong>
+    <input type="number" id="winScoreInp">
+  </div>
+</section>
+<section class="mainSection">
+  <p>Play to a winning score of <span id="winningScoreDsp">5</span>!</p>
+  <div class="playerScores"> Player 1: <span><strong id="player1Scr">0</strong></span> vs Player 2:<span><strong id="player2Scr">0</strong></span> </div>
+  <div class="resultsWindow"> Welcome - Wanna Play Rock, Paper, Scissors, SpockLizard and Fist Bump? </div>
+  <div class="userChoiceGrp">
+    <button id="rockBtn" class="userBtn btn btn-danger">Rock</button>
+    <button id="paperBtn" class="userBtn btn btn-danger">Paper</button>
+    <button id="scissorsBtn" class="userBtn btn btn-danger">Scissors</button>
+    <button id="spockLizardBtn" class="userBtn btn btn-danger">Spock Lizard</button>
+    <button id="fistBumpBtn" class="userBtn btn btn-danger">Fist Bump</button>
+  </div>
+</section>
+<footer>
+  <p>&copy; 2017 - <strong>heckle design</strong></p>
+</footer>
+</body>
+</html>
+<script type="text/javascript" src="js/rockPaperScissors.js"></script>
