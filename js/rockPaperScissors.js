@@ -229,7 +229,7 @@ function changeScore(winnerCode){
     if(winnerCode === 0 ){
         player1Score++;
         player1ScoreDisplay.textContent = player1Score;
-        winnerTitle = 'Player One for the Win!'
+        winnerTitle = 'Player One for the Win!';
     }
 
     if(winnerCode === 1 ){
