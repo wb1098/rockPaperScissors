@@ -23,7 +23,7 @@ var player2Score = 0;
 var gameOver = false;
 winningScore.value = 3;
 
-
+//#region add event listerners
 rockBtn.addEventListener('click', function(){
     var result = compareChoices('rock', getComputerChoice());
     
@@ -75,10 +75,12 @@ winningScore.addEventListener('change', function(){
     winningScoreDisplay.textContent = winningScore.value;
 });
 
+//#endregion
+
 winningScoreDisplay.textContent = winningScore.value;
 
 function resetPage(){
-    resultsWindow.textContent = `Alright!  Let's play Rock, Paper, Scissors, SpockLizard and Fist Bump again!`
+    resultsWindow.textContent = `Alright!  Let's play Rock, Paper, Scissors, SpockLizard and Fist Bump again!`;
     
     playerScoresTextStyle.innerHTML = playerScoresTextIH; 
     player1ScoreDisplay.textContent = 0;
@@ -87,7 +89,7 @@ function resetPage(){
     player2Score = 0;
     gameOver = false;
     resultsWindow.style.fontSize = "14px";
-    resultsWindow.style.color = "#000"   
+    resultsWindow.style.color = "#000";   
     
     rockBtn.disabled = false;
     paperBtn.disabled = false;
@@ -141,7 +143,7 @@ function compareChoices(choice1,choice2){
     //computer wins
     return(choice2.substr(0,1).toUpperCase() + choice2.substr(1) + ' beats you this time! \nTry Again!');
 }
-
+//#region button decisions
 function rockWins(choice1, choice2){
     'use strict';
     if(choice1 === 'rock' && (choice2 === 'scissors' || choice2 === 'spockLizard')){
@@ -217,6 +219,9 @@ function fistBumpWins(choice1, choice2){
     
     return(false);
 }
+
+//#endregion
+
 
 function changeScore(winnerCode){
     let winnerTitle = '';
