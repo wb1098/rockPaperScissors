@@ -39,11 +39,6 @@ footer{
     text-align: center;
 }
 
-td{
-
-    padding: 2px;
-}
-
 .hdrGroup{	
 	display: flex;
 	flex-wrap: nowrap;
